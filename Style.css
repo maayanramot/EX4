@@ -1,0 +1,47 @@
+h1 {
+    font-family: 'Merriweather', serif;
+    }
+
+ img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+
+  .middle {
+    border: 2px solid rgb(116, 129, 185);
+    border-radius: 50%;
+  }
+
+  .left {
+    border-radius: 4px;
+  }
+
+  .second {
+    font-family: 'Pacifico', cursive;
+  }
+
+  .third {
+    font-weight: bold;
+  }
+  
+  a:visited {
+    color: rgb(180, 148, 107);
+  }
+
+  a:hover {
+    color: rgb(211, 128, 170);
+  }
+
+  button {
+    padding : 8px;
+    background-color: blue;
+    margin:0 auto;
+    display: block;
+  }
+
+  button:hover {
+    color: white;
+    background-color: darkblue;
+  }
+ 
