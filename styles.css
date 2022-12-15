@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(251, 251, 243);
+}
+
+header {
+  position: sticky; top: 0;
+  background-color: antiquewhite;
+  padding: 10px;
+  text-align: center;
+}
+
+.titleName {
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 10px;
+ }
+
+ .subTitle {
+  font-family: 'La Belle Aurore', cursive;
+  padding: 5px;
+ }
+
+ .song {
+  font-family: 'Courgette', cursive;
+  padding: 15px;
+ }
+
+ img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+  .middle {
+    border: 2px solid rgb(116, 129, 185);
+    border-radius: 50%;
+  }
+
+  .left {
+    border-radius: 4px;
+  }
+
+  .second {
+    font-family: 'Pacifico', cursive;
+  }
+
+  .third {
+    font-weight: bold;
+  }
+
+  ol {
+    margin: 25px;
+  }
+  
+  a:visited {
+    color: rgb(180, 148, 107);
+  }
+
+  a:hover {
+    color: rgb(211, 128, 170);
+  }
+
+  .button {
+    padding : 8px;
+    background-color: blue;
+    margin:0 auto;
+    display: block;
+  }
+
+  .button:hover {
+    color: white;
+    background-color: darkblue;
+  }
+
+  footer {
+    position: fixed;
+    height: 30px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(238, 177, 177);
+  }
+
+  footer > p {
+    margin: 5px;
+    color: rgb(137, 76, 76);
+  }
+
+  footer > p:nth-child(1) {
+    display: inline;
+    position: absolute;
+    left: 0px;
+  }
+   footer > p:nth-child(2) {
+    display: inline;
+    position: absolute;
+    right: 0px;
+  }
+
+  header > a:nth-child(2) {
+    position: absolute;
+    right: 10px;
+  }
+  header > a:nth-child(1) {
+    position: absolute;
+    right: 100px;
+  }
+
+ 
