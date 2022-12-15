@@ -14,9 +14,13 @@ header {
   text-align: center;
 }
 
+.page {
+  margin-left: 325px;
+}
 .titleName {
   font-family: 'Montserrat Alternates', sans-serif;
   padding: 10px;
+  margin-left: 160px;
  }
 
  .subTitle {
@@ -27,6 +31,10 @@ header {
  .song {
   font-family: 'Courgette', cursive;
   padding: 15px;
+ }
+
+ .images {
+  margin-left:85px;;
  }
 
  img {
@@ -68,7 +76,7 @@ header {
   .button {
     padding : 8px;
     background-color: blue;
-    margin:0 auto;
+    margin:50px auto;
     display: block;
   }
 
