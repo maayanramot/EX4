@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
-    <link rel="stylesheet" href="/EX4/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&family=La+Belle+Aurore&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me</title>
+        <link rel="stylesheet" href="/EX4/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&family=La+Belle+Aurore&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>A Bit About Me
-        <a href="url">Places I love</a>
-        <a href="url">Contact Me</a>
+    <header>
+        <div id="aBitAboutMe">A Bit About Me</div>
+        <div id="placesILove" onclick="handleClick()">Places I love</div>
+        <div id="contactMe" onclick="handleClick2()">Contact Me</div>
     </header>
     <div class="page">
-    <h1 class="titleName">Maayan Ramot</h1>
-    <h2 class="subTitle">25 years old, living in Hafetz Haim with my family : Yotam and Goni</h2>
-   <p class="song"><span>Hey Jude, don't make </span>it bad.<br>
-    Take a sad song and make it better.<br>
-    Remember to let her into your heart,<br>
-    Then you can start to make it better.<br>
-    </p>
-    <section class="images">
+        <h1 class="titleName">Maayan Ramot</h1>
+        <h2 class="subTitle">25 years old, living in Hafetz Haim with my family : Yotam and Goni</h2>
+        <p class="song"><span>Hey Jude, don't make </span>it bad.<br>
+            Take a sad song and make it better.<br>
+            Remember to let her into your heart,<br>
+            Then you can start to make it better.<br>
+        </p>
+        <section class="images">
         <img class="left" src="/EX4/assets/Goni.jpg"/>
         <img class="middle" src="/EX4/assets/diving.jpg"/>
         <img src="/EX4/assets/dog.jpg"/>
-    </section>
-    <h3>My favorite foods is:</h3>
-    <ol>
-        <li>Ravioli</li>
-        <li class="second">Risotto</li>
-        <li class="third">Salad</li>
-        <li>Cheese Cake</li>
-    </ol>
-    <section>
-        <h1>Hafetz-Haim</h1>
-        <a href="https://goo.gl/maps/9cTdVqTeqpaSFbBw9" target="_blank">location(on Google maps)</a><br><br>
-        <table>
-            <tr>
-                <th>pros</th>
-                <th>cons</th>
-            </tr>
-            <tr>
-                <td>simple</td>
-                <td>not in the nature</td>
-            </tr>
-            <tr>
-                <td>queit</td>
-                <td>without beach nearby</td>
-            </tr>
-        </table>
-    </section>
-</div>
+        </section>
+        <h3>My favorite foods is:</h3>
+        <ol>
+            <li>Ravioli</li>
+            <li class="second">Risotto</li>
+            <li class="third">Salad</li>
+            <li>Cheese Cake</li>
+        </ol>
+        <section>
+            <h1>Hafetz-Haim</h1>
+            <a href="https://goo.gl/maps/9cTdVqTeqpaSFbBw9" target="_blank">location(on Google maps)</a><br><br>
+            <table>
+                <tr>
+                    <th>pros</th>
+                    <th>cons</th>
+                </tr>
+                <tr>
+                    <td>simple</td>
+                    <td>not in the nature</td>
+                </tr>
+                <tr>
+                    <td>queit</td>
+                    <td>without beach nearby</td>
+                </tr>
+            </table>
+        </section>
+        <button class="button">Click to see more</button>
+    </div>
+    <script src="/EX4/main.js"></script>
     <footer>
         <p>Maayan Ramot</p>
         <p>13/12/22</p>
     </footer>
-    <button type="button" class="button">Click to see more</button>
 </body>
 </html>

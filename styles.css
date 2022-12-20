@@ -6,12 +6,27 @@
 body {
   background-color: rgb(251, 251, 243);
 }
+/* 
+.content-container {
+
+} */
 
 header {
   position: sticky; top: 0;
   background-color: antiquewhite;
-  padding: 10px;
+}
+
+#aBitAboutMe {
   text-align: center;
+}
+
+#placesILove {
+display: inline-block;
+margin-left: 68em;
+}
+
+#contactMe {
+  display: inline-block;
 }
 
 .page {
