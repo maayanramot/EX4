@@ -6,61 +6,64 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About me</title>
         <link rel="stylesheet" href="/AboutMe/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Courgette&family=La+Belle+Aurore&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div id="aBitAboutMe">A Bit About Me</div>
-        <div id="placesILove" onclick="handleClick()">Places I love</div>
-        <div id="contactMe" onclick="handleClick2()">Contact Me</div>
-        <button id="darkModeSwitch" onclick="indicateDarkMode()">Light/Dark Mode</button>
+        <div id="rightButtons">
+            <div id="aBitAboutMe" class="heasText">A Bit About Me</div>
+            <div id="placesILove" class="heasText" onclick="handleClick()">Places I love</div>
+        </div>
+        <div id="contactMe" class="heasText" onclick="handleClick2()">Contact Me</div>
+        <button id="darkModeSwitch" class="heasText" onclick="indicateDarkMode()">Light/Dark Mode</button>
     </header>
-    <div class="page">
-        <h1 class="titleName">Maayan Ramot</h1>
-        <h2 class="subTitle">25 years old, living in Hafetz Haim with my family : Yotam and Goni</h2>
-        <p class="song"><span>Hey Jude, don't make </span>it bad.<br>
-            Take a sad song and make it better.<br>
-            Remember to let her into your heart,<br>
-            Then you can start to make it better.<br>
-        </p>
-        <section class="images">
-        <img class="left" src="/AboutMe/assets/goni.jpg" alt="Goni"/>
-        <img class="middle" src="/AboutMe/assets/diving.jpg" alt="diving"/>
-        <img src="/AboutMe/assets/dog.jpg" alt="dog"/>
-        </section>
-        <h3>My favorite foods is:</h3>
-        <ul id="favoriteFood">
-            <li id="first">Ravioli</li>
-            <li id="second">Risotto</li>
-            <li id="third">Salad</li>
-            <li id="fourth">Cheese Cake</li>
-        </ul>
-        <section>
-            <h1>Hafetz-Haim</h1>
-            <a href="https://goo.gl/maps/9cTdVqTeqpaSFbBw9" target="_blank">location(on Google maps)</a><br><br>
-            <table>
-                <tr>
-                    <th>pros</th>
-                    <th>cons</th>
-                </tr>
-                <tr>
-                    <td>simple</td>
-                    <td>not in the nature</td>
-                </tr>
-                <tr>
-                    <td>queit</td>
-                    <td>without beach nearby</td>
-                </tr>
-            </table>
-        </section>
-        <button class="button">Click to see more</button>
-    </div>
-    <script src="/AboutMe/main.js"></script>
+    <main>
+        <div class="page">
+            <h1 class="titleName">Maayan Ramot</h1>
+            <h3 class="subTitle">25 years old, living in Hafetz Haim with my family : Yotam and Goni</h3>
+            <p class="song"><span>Hey Jude, don't make </span>it bad.<br>
+                Take a sad song and make it better.<br>
+                Remember to let her into your heart,<br>
+                Then you can start to make it better.<br>
+            </p>
+            <section class="images">
+                <img class="img" src="/AboutMe/assets/goni.jpg" alt="Goni"/>
+                <img class="img" src="/AboutMe/assets/diving.jpg" alt="diving"/>
+                <img class="img" src="/AboutMe/assets/dog.jpg" alt="dog"/>
+            </section>
+            <div id="foodCon">
+                <h3>My favorite foods is:</h3>
+                <ul id="favoriteFood">
+                    <li class="liItem">Ravioli</li>
+                    <li class="liItem">Risotto</li>
+                    <li class="liItem">Salad</li>
+                    <li class="liItem">Cheese Cake</li>
+                </ul>
+            </div>
+            <section>
+                <h1>Hafetz-Haim</h1>
+                <a href="https://goo.gl/maps/9cTdVqTeqpaSFbBw9" target="_blank">location(on Google maps)</a><br><br>
+                <table>
+                    <tr>
+                        <th>pros</th>
+                        <th>cons</th>
+                    </tr>
+                    <tr>
+                        <td>simple</td>
+                        <td>not in the nature</td>
+                    </tr>
+                    <tr>
+                        <td>queit</td>
+                        <td>without beach nearby</td>
+                    </tr>
+                </table>
+            </section>
+            <button class="button">Click to see more</button>
+        </div>
+    </main>
     <footer>
         <p>Maayan Ramot</p>
         <p>13/12/22</p>
     </footer>
+    <script src="/AboutMe/main.js"></script>
 </body>
 </html>

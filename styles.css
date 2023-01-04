@@ -1,56 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
   background-color: rgb(255, 255, 255);
   color : black;
+  font-family: 'Lora', serif;
 }
-/* 
-.content-container {
-
-} */
 
 header {
-  position: sticky; top: 0;
-  background-color: antiquewhite;
+  position: sticky;
+  top: 0;
+
+  background-color: rgb(198, 178, 151);
+  
+  width : 100%;
+  height: 35px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#aBitAboutMe {
-  text-align: center;
+#rightButtons {
+  display: flex;
+  background-color: transparent;
+  margin: 1%;
+  font-size: 14px;
+  width: 250px;
 }
 
-#placesILove {
-display: inline-block;
-margin-left: 68em;
+.heasText {
+  background-color: transparent;
+  margin: 3%;
+  color: #fff;
 }
 
 #contactMe {
-  display: inline-block;
+  margin-right: 120px;
+  /* display: flex;
+  align-self: center; */
+}
+
+#darkModeSwitch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+#darkModeSwitch:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
 }
 
 .page {
-  margin-left: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .titleName {
-  font-family: 'Montserrat Alternates', sans-serif;
-  padding: 10px;
-  margin-left: 160px;
+  display: flex;
+  align-self: center;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
  }
 
  .subTitle {
-  font-family: 'La Belle Aurore', cursive;
   padding: 5px;
  }
 
  .song {
-  font-family: 'Courgette', cursive;
   padding: 15px;
  }
 
  .images {
-  margin-left:85px;;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
  }
 
  img {
@@ -60,25 +99,15 @@ margin-left: 68em;
     margin: 10px;
   }
 
-  .middle {
-    border: 2px solid rgb(116, 129, 185);
-    border-radius: 50%;
-  }
-
-  .left {
+  .img {
     border-radius: 4px;
+    margin-bottom: 20px;
   }
 
-  #second {
-    font-family: 'Pacifico', cursive;
-  }
-
-  #third {
-    font-weight: bold;
-  }
-
-  ol {
-    margin: 25px;
+  #favoriteFood {
+    margin-bottom: 30px;
+    margin-top: 5px;
+    list-style: none;
   }
   
   a:visited {
@@ -89,16 +118,51 @@ margin-left: 68em;
     color: rgb(211, 128, 170);
   }
 
-  .button {
-    padding : 8px;
-    background-color: blue;
-    margin:50px auto;
-    display: block;
+  table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px;
   }
 
+  .button {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    margin: 50px;
+  }
+  
   .button:hover {
-    color: white;
-    background-color: darkblue;
+    background-color: #fff;
+  }
+  
+  .button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button {
+      min-width: 120px;
+      padding: 0 25px;
+    }
   }
 
   footer {
@@ -112,6 +176,7 @@ margin-left: 68em;
   footer > p {
     margin: 5px;
     color: rgb(137, 76, 76);
+    background-color: transparent;
   }
 
   footer > p:nth-child(1) {
