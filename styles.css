@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+
+/* desktop first */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
-  color : black;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 header {
@@ -14,16 +14,21 @@ header {
   top: 0;
 
   background-color: rgb(198, 178, 151);
-  
-  width : 100%;
+
+  width: 100%;
   height: 35px;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#rightButtons {
+h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.bar-right-buttons {
   display: flex;
   background-color: transparent;
   margin: 1%;
@@ -31,36 +36,34 @@ header {
   width: 250px;
 }
 
-.heasText {
+.buttons-text {
   background-color: transparent;
   margin: 3%;
   color: #fff;
 }
 
-#contactMe {
+.contact-me {
   margin-right: 120px;
-  /* display: flex;
-  align-self: center; */
 }
 
-#darkModeSwitch {
+.dark-mode {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 6px 14px;
   border-radius: 6px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   background: #fff;
   border: none;
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-
 }
 
-#darkModeSwitch:focus {
-  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+.dark-mode:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
   outline: 0;
 }
 
@@ -70,133 +73,217 @@ header {
   align-items: center;
 }
 
-.titleName {
+.title-name {
   display: flex;
   align-self: center;
 
   margin-bottom: 10px;
   margin-top: 10px;
- }
+}
 
- .subTitle {
+.sub-title {
   padding: 5px;
- }
+}
 
- .song {
-  padding: 15px;
- }
+.song {
+  padding: 15px 200px 15px 200px;
+  text-align: justify;
+}
 
- .images {
+.images {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- }
+}
 
- img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    margin: 10px;
-  }
+.img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin: 10px;
 
-  .img {
-    border-radius: 4px;
-    margin-bottom: 20px;
-  }
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
 
-  #favoriteFood {
-    margin-bottom: 30px;
-    margin-top: 5px;
-    list-style: none;
-  }
-  
-  a:visited {
-    color: rgb(180, 148, 107);
-  }
+.favorite-food {
+  margin-bottom: 30px;
+  margin-top: 5px;
+  list-style: none;
+}
 
-  a:hover {
-    color: rgb(211, 128, 170);
-  }
+a:visited {
+  color: rgb(180, 148, 107);
+}
 
-  table {
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 5px;
-  }
+a:hover {
+  color: rgb(211, 128, 170);
+}
 
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  margin: 50px;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
   .button {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+footer {
+  position: fixed;
+  height: 30px;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(238, 177, 177);
+}
+
+footer > p {
+  margin: 5px;
+  color: rgb(137, 76, 76);
+  background-color: transparent;
+}
+
+footer > p:nth-child(1) {
+  display: inline;
+  position: absolute;
+  left: 0px;
+}
+footer > p:nth-child(2) {
+  display: inline;
+  position: absolute;
+  right: 0px;
+}
+
+header > a:nth-child(2) {
+  position: absolute;
+  right: 10px;
+}
+header > a:nth-child(1) {
+  position: absolute;
+  right: 100px;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 320px) {
+  header {
+    width: 100vw;
+  }
+
+  .non-mobile-buttons {
+    display: none;
+    visibility: hidden;
+  }
+
+  .contact-me {
+    margin: 0;
+    margin-right: 200px;
+
+    font-size: 14px;
     text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-
-    margin: 50px;
-  }
-  
-  .button:hover {
-    background-color: #fff;
-  }
-  
-  .button:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-  }
-  
-  @media (min-width: 768px) {
-    .button {
-      min-width: 120px;
-      padding: 0 25px;
-    }
   }
 
-  footer {
-    position: fixed;
+  .dark-mode {
+    padding: 5px;
+    margin: 0px;
+    margin-right: 20px;
+
     height: 30px;
-    bottom: 0px;
-    width: 100%;
-    background-color: rgb(238, 177, 177);
+    font-size: 10px;
+    text-align: center;
+    line-height: 10px;
   }
 
-  footer > p {
-    margin: 5px;
-    color: rgb(137, 76, 76);
-    background-color: transparent;
+  h3 {
+    font-size: 14px;
   }
 
-  footer > p:nth-child(1) {
-    display: inline;
-    position: absolute;
-    left: 0px;
-  }
-   footer > p:nth-child(2) {
-    display: inline;
-    position: absolute;
-    right: 0px;
+  .song {
+    padding: 25px;
   }
 
-  header > a:nth-child(2) {
-    position: absolute;
-    right: 10px;
+  .images {
+    display: flex;
+    flex-direction: column;
   }
-  header > a:nth-child(1) {
-    position: absolute;
-    right: 100px;
+}
+
+/* Tablet Styles */
+
+@media (max-width: 635px) {
+  header {
+    width: 100vw;
   }
 
- 
+  .non-mobile-buttons {
+    display: none;
+    visibility: hidden;
+  }
+
+  .contact-me {
+    margin: 0;
+    margin-right: 200px;
+
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .dark-mode {
+    padding: 5px;
+    margin: 0px;
+    margin-right: 20px;
+
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 10px;
+  }
+
+  .song {
+    padding: 25px;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+}
